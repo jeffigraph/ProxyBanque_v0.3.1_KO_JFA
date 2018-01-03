@@ -8,11 +8,13 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
+import javax.xml.bind.annotation.XmlRootElement;
 
 import com.proxybanque_KO_JFA.dao.DaoPersistanceException;
 import com.proxybanque_KO_JFA.dao.IDaoConseiller;
 import com.proxybanque_KO_JFA.entity.Conseiller;
 
+@XmlRootElement
 public class DaoConseillerJPA implements IDaoConseiller {
 	public DaoConseillerJPA() {
 

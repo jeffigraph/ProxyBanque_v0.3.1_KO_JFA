@@ -12,6 +12,15 @@ public class TestServeImpl implements ITestServe {
 
 	private ServiceEngine srvcEng;
 
+	public TestServeImpl() {
+		super();
+		try {
+		this.srvcEng = new ServiceEngine();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	public Client getClientById(Long idCli) {
 		Client c1 = null;
 		try {

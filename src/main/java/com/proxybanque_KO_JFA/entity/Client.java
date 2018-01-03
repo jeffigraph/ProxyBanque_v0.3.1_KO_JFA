@@ -10,6 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Definit les informations d'un client avec ses comptes.
@@ -18,6 +19,7 @@ import javax.persistence.Table;
  * @version 0.1
  *
  */
+@XmlRootElement(name="client")
 @Entity
 @Table(name = "client")
 public class Client {
